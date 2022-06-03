@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio NodeJs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lisandrofernando/PortfolioUpdated.git"
+  },
+  "author": "Lisandro Fernando",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lisandrofernando/PortfolioUpdated/issues"
+  },
+  "homepage": "https://github.com/lisandrofernando/PortfolioUpdated#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "nodemailer": "^6.7.5",
+    "nodemailer-mailgun-transport": "^2.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
