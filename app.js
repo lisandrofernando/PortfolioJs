@@ -1,7 +1,7 @@
 const express = require('express');
 
 const app = express();
-const port = 8000;
+const port =process.env.Port || 8000;
 
 
 /**
@@ -15,9 +15,11 @@ app.use('/js', express.static(__dirname + 'public/js'));
 Data Parsing
 */
 
+
 app.get('',(req,res) => {
     res.sendFile(__dirname + '/views/index.html')
 });
+
 
 
 
