@@ -24,4 +24,4 @@ app.get('',(req,res) => {
 
 
 /* listen on port 8000 */
-app.listen(port,()=> console.info(`Listening on port ${port}`));
+app.listen(port,host,()=> console.info(`Listening on port ${port}`));
