@@ -1,7 +1,7 @@
 const express = require('express');
 const host = '0.0.0.0';
 const app = express();
-const port =process.env.port || 5000;
+const port =process.env.Port || 5000;
 
 
 /**
@@ -24,4 +24,4 @@ app.get('',(req,res) => {
 
 
 /* listen on port 5000 */
-app.listen(process.env.port, '0.0.0.0',()=> console.info(`Listening on port ${port}:${host}`));
+app.listen(process.env.Port, '0.0.0.0',()=> console.info(`Listening on port ${port}:${host}`));
