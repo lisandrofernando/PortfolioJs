@@ -1,7 +1,9 @@
 const express = require('express');
-const host = '0.0.0.0';
 const app = express();
+const path = require('path');
+const host = '0.0.0.0';
 const port =process.env.Port || 5000;
+
 
 
 /**
@@ -16,7 +18,7 @@ Data Parsing
 */
 
 
-app.get('',(req,res) => {
+app.get('*',(req,res) => {
     res.sendFile(__dirname + '/views/index.html')
 });
 
