@@ -24,4 +24,4 @@ app.get('',(req,res) => {
 
 
 /* listen on port 5000 */
-app.listen(port,host,()=> console.info(`Listening on port ${port}`));
+app.listen(process.env.Port, '0.0.0.0',()=> console.info(`Listening on port ${port}`));
