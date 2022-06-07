@@ -1,7 +1,7 @@
 const express = require('express');
 
 const app = express();
-const port = proces.env.PORT || 5000;
+const port = 8000;
 
 
 /**
@@ -18,6 +18,7 @@ Data Parsing
 app.get('',(req,res) => {
     res.sendFile(__dirname + '/views/index.html')
 });
+
 
 
 /* listen on port 8000 */
