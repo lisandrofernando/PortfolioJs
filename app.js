@@ -1,8 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 5000;
-
-
+const port = 8000;
 
 /**
 Static Files
@@ -15,13 +13,10 @@ app.use('/js', express.static(__dirname + 'public/js'));
 Data Parsing
 */
 
-
 app.get('',(req,res) => {
     res.sendFile(__dirname + '/views/index.html')
 });
 
 
-
-
 /* listen on port 5000 */
-app.listen(port,()=> console.info(`Listening on port ${port}`));
+app.listen(port, ()=> console.info(`Listening on port ${port}`));
